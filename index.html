@@ -1,24 +1,331 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ARCH STUDIO - Minimal Architecture &amp; Design</title>
-    <meta name="description" content="Award-winning architectural firm specializing in minimal design. Creating extraordinary spaces through thoughtful architecture, residential, commercial and renovation projects.">
-    <meta name="author" content="ARCH STUDIO" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ARCH STUDIO - Creating spaces that inspire through thoughtful design and uncompromising quality. Minimal architecture for modern living.">
+  <meta name="keywords" content="architecture, minimal design, residential, commercial, renovation, design studio">
+  <title>ARCH STUDIO | Minimal Architecture</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="public/favicon.ico">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="ARCH STUDIO | Minimal Architecture">
+  <meta property="og:description" content="Creating spaces that inspire through thoughtful design and uncompromising quality.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">ARCH STUDIO</a>
+        
+        <div class="nav-links">
+          <a href="work.html" class="nav-link">WORK</a>
+          <a href="services.html" class="nav-link">SERVICES</a>
+          <a href="about.html" class="nav-link">ABOUT</a>
+          <a href="blog.html" class="nav-link">BLOG</a>
+          <a href="contact.html" class="nav-link">CONTACT</a>
+        </div>
+        
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2"></path>
+              <path d="M12 20v2"></path>
+              <path d="m4.93 4.93 1.41 1.41"></path>
+              <path d="m17.66 17.66 1.41 1.41"></path>
+              <path d="M2 12h2"></path>
+              <path d="M20 12h2"></path>
+              <path d="m6.34 17.66-1.41 1.41"></path>
+              <path d="m19.07 4.93-1.41 1.41"></path>
+            </svg>
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          </button>
+        </div>
+        
+        <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-links">
+        <a href="work.html" class="mobile-menu-link">WORK</a>
+        <a href="services.html" class="mobile-menu-link">SERVICES</a>
+        <a href="about.html" class="mobile-menu-link">ABOUT</a>
+        <a href="blog.html" class="mobile-menu-link">BLOG</a>
+        <a href="contact.html" class="mobile-menu-link">CONTACT</a>
+      </div>
+      <div class="mobile-theme-toggle">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-    <meta property="og:title" content="ARCH STUDIO - Minimal Architecture & Design" />
-    <meta property="og:description" content="Award-winning architectural firm specializing in minimal design. Creating extraordinary spaces through thoughtful architecture." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/8jp6KAG7qJZgRp4lIs04ZYXqlhL2/social-images/social-1758046678671-Screenshot 2025-09-16 at 20.17.45.png">
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg" style="background-image: url('images/hero-architecture.jpg');"></div>
+      <div class="hero-overlay"></div>
+      
+      <div class="hero-content">
+        <h1 class="hero-title text-architectural">MINIMAL<br>ARCHITECTURE</h1>
+        <p class="hero-subtitle">Creating spaces that inspire through thoughtful design and uncompromising quality</p>
+      </div>
+      
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <div class="scroll-text">SCROLL</div>
+      </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/8jp6KAG7qJZgRp4lIs04ZYXqlhL2/social-images/social-1758046678671-Screenshot 2025-09-16 at 20.17.45.png">
-  </head>
+    <!-- Services Section -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="max-w-7xl">
+          <div class="section-header">
+            <p class="text-minimal section-label">SERVICES</p>
+            <h2 class="section-title text-architectural">What We Do</h2>
+          </div>
+          
+          <div class="services-grid">
+            <div class="service-item">
+              <span class="text-minimal service-number">01</span>
+              <div>
+                <h3 class="service-title text-architectural">RESIDENTIAL</h3>
+                <p class="service-description">Crafting homes that reflect individual lifestyles while maintaining architectural integrity</p>
+              </div>
+            </div>
+            
+            <div class="service-item">
+              <span class="text-minimal service-number">02</span>
+              <div>
+                <h3 class="service-title text-architectural">COMMERCIAL</h3>
+                <p class="service-description">Designing functional spaces that enhance business environments and user experiences</p>
+              </div>
+            </div>
+            
+            <div class="service-item">
+              <span class="text-minimal service-number">03</span>
+              <div>
+                <h3 class="service-title text-architectural">RENOVATION</h3>
+                <p class="service-description">Transforming existing structures with contemporary sensibilities and sustainable practices</p>
+              </div>
+            </div>
+            
+            <div class="service-item">
+              <span class="text-minimal service-number">04</span>
+              <div>
+                <h3 class="service-title text-architectural">CONSULTATION</h3>
+                <p class="service-description">Providing expert guidance on design direction, planning, and architectural solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- About Section -->
+    <section class="section section-muted" id="about">
+      <div class="container">
+        <div class="max-w-7xl">
+          <div class="about-grid">
+            <div>
+              <p class="text-minimal section-label">ABOUT</p>
+              <h2 class="section-title text-architectural" style="margin-bottom: 3rem;">Design Philosophy</h2>
+              
+              <p class="about-text">
+                We believe architecture should enhance human experience while respecting 
+                the natural environment. Our practice focuses on creating spaces that 
+                are both functional and poetic.
+              </p>
+              
+              <p class="about-text">
+                Founded in 2015, our studio has completed over 200 projects across 
+                residential, commercial, and cultural sectors. Each project begins 
+                with careful listening and ends with thoughtful execution.
+              </p>
+            </div>
+            
+            <div>
+              <p class="text-minimal section-label" style="margin-bottom: 1.5rem;">APPROACH</p>
+              
+              <div class="approach-item">
+                <h4 class="approach-title">Research</h4>
+                <p class="approach-desc">Deep understanding of context, culture, and climate</p>
+              </div>
+              
+              <div class="approach-item">
+                <h4 class="approach-title">Collaboration</h4>
+                <p class="approach-desc">Close partnership with clients, engineers, and craftspeople</p>
+              </div>
+              
+              <div class="approach-item">
+                <h4 class="approach-title">Innovation</h4>
+                <p class="approach-desc">Sustainable materials and forward-thinking design solutions</p>
+              </div>
+              
+              <div class="stats-grid">
+                <div>
+                  <p class="text-minimal section-label">FOUNDED</p>
+                  <p class="stat-value">2015</p>
+                </div>
+                <div>
+                  <p class="text-minimal section-label">PROJECTS</p>
+                  <p class="stat-value">200+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="max-w-7xl">
+          <div class="section-header">
+            <p class="text-minimal section-label">SELECTED WORK</p>
+            <h2 class="section-title text-architectural">Our Projects</h2>
+          </div>
+          
+          <div class="portfolio-list">
+            <article class="project">
+              <div class="project-image-wrapper">
+                <img src="images/project-1.jpg" alt="Minimal Residence - Contemporary home in New York" class="project-image">
+                <div class="project-image-overlay"></div>
+              </div>
+              <div class="project-info">
+                <div>
+                  <h3 class="project-title text-architectural">MINIMAL RESIDENCE</h3>
+                  <p class="text-minimal project-location">NEW YORK, 2024</p>
+                </div>
+                <p class="project-description">A contemporary home focusing on light, space, and material honesty</p>
+              </div>
+            </article>
+            
+            <article class="project">
+              <div class="project-image-wrapper">
+                <img src="images/project-2.jpg" alt="Corporate Headquarters - Modern office space in London" class="project-image">
+                <div class="project-image-overlay"></div>
+              </div>
+              <div class="project-info">
+                <div>
+                  <h3 class="project-title text-architectural">CORPORATE HEADQUARTERS</h3>
+                  <p class="text-minimal project-location">LONDON, 2023</p>
+                </div>
+                <p class="project-description">Modern office space emphasizing collaboration and natural elements</p>
+              </div>
+            </article>
+            
+            <article class="project">
+              <div class="project-image-wrapper">
+                <img src="images/project-3.jpg" alt="Cultural Center - Public architecture in Tokyo" class="project-image">
+                <div class="project-image-overlay"></div>
+              </div>
+              <div class="project-info">
+                <div>
+                  <h3 class="project-title text-architectural">CULTURAL CENTER</h3>
+                  <p class="text-minimal project-location">TOKYO, 2023</p>
+                </div>
+                <p class="project-description">Public architecture that bridges tradition with contemporary design</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-muted" id="contact">
+      <div class="container">
+        <div class="max-w-7xl">
+          <div class="contact-grid">
+            <div>
+              <p class="text-minimal section-label">GET IN TOUCH</p>
+              <h2 class="section-title text-architectural" style="margin-bottom: 3rem;">
+                Let's Create Something<br>Extraordinary
+              </h2>
+              
+              <div class="contact-info">
+                <div class="contact-item">
+                  <p class="text-minimal section-label">EMAIL</p>
+                  <a href="mailto:hello@archstudio.com">hello@archstudio.com</a>
+                </div>
+                
+                <div class="contact-item">
+                  <p class="text-minimal section-label">PHONE</p>
+                  <a href="tel:+1234567890">+1 (234) 567-8900</a>
+                </div>
+                
+                <div class="contact-item">
+                  <p class="text-minimal section-label">STUDIO</p>
+                  <address>
+                    123 Design Avenue<br>
+                    New York, NY 10001
+                  </address>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <p class="text-minimal section-label" style="margin-bottom: 1.5rem;">FOLLOW US</p>
+              <div class="social-links">
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Behance</a>
+              </div>
+              
+              <p class="contact-note">
+                We approach each project with curiosity, rigor, and a commitment to excellence. 
+                Our process begins with listening, understanding your vision, and translating 
+                it into spaces that exceed expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2024 ARCH STUDIO. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
 </html>
