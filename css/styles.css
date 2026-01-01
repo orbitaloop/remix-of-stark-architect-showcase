@@ -952,6 +952,77 @@ button {
 }
 
 /* =============================================
+   BLOG POST (Single)
+   ============================================= */
+.blog-post {
+  padding: 2rem 0 6rem;
+}
+
+.blog-post-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+  transition: var(--transition-fast);
+}
+
+.back-link:hover {
+  color: var(--foreground);
+}
+
+.blog-post-header .category-badge {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.blog-post-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.blog-post-meta {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.blog-post-image {
+  margin-bottom: 3rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.blog-post-image img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.blog-post-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.blog-post-content p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--muted-foreground);
+}
+
+.blog-post-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* =============================================
    UTILITIES
    ============================================= */
 .max-w-7xl {
